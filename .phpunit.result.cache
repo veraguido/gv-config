@@ -1,1 +1,0 @@
-C:37:"PHPUnit\Runner\DefaultTestResultCache":216:{a:2:{s:7:"defects";a:2:{s:31:"ConfigTest::testConfigException";i:4;s:27:"ConfigTest::testConfigValue";i:4;}s:5:"times";a:2:{s:31:"ConfigTest::testConfigException";d:0.001;s:27:"ConfigTest::testConfigValue";d:0.002;}}}
