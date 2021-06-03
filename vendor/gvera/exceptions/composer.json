@@ -1,0 +1,30 @@
+{
+    "name": "gvera/exceptions",
+    "description": "exceptions package for gv framework",
+    "license": "MIT",
+    "keywords": ["gv", "exceptions"],
+    "authors": [
+        {
+            "name": "Guido Vera",
+            "email": "vera.a.guido@gmail.com"
+        }
+    ],
+    "config": {
+        "platform" :{
+            "php": "7.4.0"
+        }
+    },
+    "require": {
+    },
+    "require-dev": {
+    },
+    "scripts": {
+    },
+    "autoload": {
+      "psr-4": {
+        "Gvera\\": [
+          "src/"
+        ]
+      }
+    }
+}
