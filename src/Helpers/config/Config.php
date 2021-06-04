@@ -1,6 +1,7 @@
 <?php
 namespace Gvera\Helpers\config;
 
+use Exception;
 use Gvera\Exceptions\InvalidArgumentException;
 use Symfony\Component\Yaml\Yaml;
 
@@ -18,7 +19,7 @@ class Config
     /**
      * Config constructor.
      * @param string|null $configFilePath
-     * @throws InvalidArgumentException
+     * @throws Exception
      */
     public function __construct(?string $configFilePath = null)
     {
@@ -27,7 +28,7 @@ class Config
         }
 
         if (!file_exists($configFilePath)) {
-            throw new InvalidArgumentException('config file could not be found');
+            throw new Exception('config file could not be found');
         }
 
         $this->setConfig(Yaml::parse(file_get_contents($configFilePath))["config"]);

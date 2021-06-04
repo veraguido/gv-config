@@ -7,7 +7,7 @@ class ConfigTest extends \PHPUnit\Framework\TestCase
      */
     public function testConfigException()
     {
-        $this->expectException(\Gvera\Exceptions\InvalidArgumentException::class);
+        $this->expectException(Exception::class);
         $config = new \Gvera\Helpers\config\Config('asd');
     }
 
