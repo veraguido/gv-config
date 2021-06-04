@@ -43,4 +43,9 @@ class Config
     {
         $this->config = $config;
     }
+
+    public function overrideKey(string $key, $value)
+    {
+        $this->config[$key] = $value;
+    }
 }

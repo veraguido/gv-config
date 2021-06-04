@@ -18,5 +18,9 @@ class ConfigTest extends \PHPUnit\Framework\TestCase
     {
         $config = new \Gvera\Helpers\config\Config();
         $this->assertTrue($config->getConfigItem('devmode'));
+
+        $config->overrideKey("devmode", false);
+        $this->assertFalse($config->getConfigItem('devmode'));
+
     }
 }
